@@ -1,0 +1,38 @@
+{
+  "name": "express-deprecated-api",
+  "version": "0.1.0",
+  "description": "This package helps deprecate API routes which are no longer going to be in use by exposing headers which will describe deprecation notices and information for API consumers.",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "scripts": {
+    "build": "npx babel src --out-dir dist",
+    "start": "npx babel src --watch --out-dir dist",
+    "publish": "npm run build && npm publish",
+    "lint": "eslint src/*.js tests/*.js --fix",
+    "test": "jasmine tests/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jkeys/express-deprecated-api.git"
+  },
+  "keywords": [
+    "express",
+    "api",
+    "deprecated",
+    "deprecation"
+  ],
+  "author": "Jonathan Keys <accounts@jonathankeys.io> (https://github.com/jkys)",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.0",
+    "express": "^4.17.1",
+    "jasmine": "^3.4.0",
+    "npx": "^10.2.0",
+    "supertest": "^4.0.2"
+  }
+}
