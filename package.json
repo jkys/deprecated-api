@@ -9,6 +9,7 @@
     "start": "npx babel src --watch --out-dir dist",
     "publish": "npm run build && npm publish",
     "lint": "eslint src/*.js tests/*.js --fix",
+    "lint:travis": "eslint src/*.js tests/*.js",
     "test": "jasmine tests/index.js"
   },
   "repository": {
