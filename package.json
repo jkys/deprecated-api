@@ -1,5 +1,5 @@
 {
-  "name": "express-deprecated-api",
+  "name": "deprecated-api",
   "version": "0.1.0",
   "description": "This package helps deprecate API routes which are no longer going to be in use by exposing headers which will describe deprecation notices and information for API consumers.",
   "main": "cjs/index.js",

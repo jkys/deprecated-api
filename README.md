@@ -1,5 +1,8 @@
 # deprecated-api
 
+[![NPM Version][npm-version-image]][npm-url]
+[![Build status][travis-image]][travis-url]
+
 ## Installation
 
 This is a [Node.js](https://nodejs.org/en/) module available through the
@@ -79,3 +82,9 @@ app.use(apiDeprecated(options));
   'x-api-deprecation-message': 'This API route is deprecated as well, This api is being upgraded to V2'
 }
 ```
+
+
+[npm-url]: https://npmjs.org/package/deprecated-api
+[npm-version-image]: https://badgen.net/npm/v/deprecated-api
+[travis-image]: https://travis-ci.org/jkys/deprecated-api.svg?branch=master
+[travis-url]: https://travis-ci.org/jkys/deprecated-api
