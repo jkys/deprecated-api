@@ -1,5 +1,5 @@
 .DS_Store
 .nyc_output
 coverage
-dist
+index.js
 node_modules

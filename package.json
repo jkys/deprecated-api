@@ -1,25 +1,24 @@
 {
   "name": "deprecated-api",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "This package helps deprecate API routes which are no longer going to be in use by exposing headers which will describe deprecation notices and information for API consumers.",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "main": "index.js",
   "scripts": {
-    "build": "npx babel src --out-dir dist",
+    "build": "npx babel src --out-dir .",
+    "cover": "nyc npm run test",
     "coveralls": "nyc --reporter=lcov npm run test && cat ./coverage/lcov.info | coveralls",
     "lint:travis": "eslint src/*.js tests/*.js",
     "lint": "eslint src/*.js tests/*.js --fix",
-    "publish": "npm run build && npm publish",
-    "start": "npx babel src --watch --out-dir dist",
+    "start": "npx babel src --watch --out-dir .",
     "test": "jasmine tests/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jkeys/deprecated-api.git"
+    "url": "git://github.com/jkys/deprecated-api.git"
   },
   "files": [
     "LICENSE",
-    "dist/index.js"
+    "index.js"
   ],
   "keywords": [
     "express",
