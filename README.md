@@ -2,12 +2,11 @@
 
 [![NPM Version][npm-version-image]][npm-url]
 [![Build status][travis-image]][travis-url]
+[![Coverage Status][coveralls-image]][coveralls-url]
 
 ## Installation
 
-This is a [Node.js](https://nodejs.org/en/) module available through the
-[npm registry](https://www.npmjs.com/). Installation is done using the
-[`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
+This package can be downloaded through the [npm registry](https://www.npmjs.com/) via the npm command:
 
 ```sh
 $ npm install deprecated-api
@@ -88,3 +87,5 @@ app.use(apiDeprecated(option2));
 [npm-version-image]: https://badgen.net/npm/v/deprecated-api
 [travis-image]: https://travis-ci.org/jkys/deprecated-api.svg?branch=master
 [travis-url]: https://travis-ci.org/jkys/deprecated-api
+[coveralls-image]: https://coveralls.io/repos/github/jkys/deprecated-api/badge.svg?branch=master
+[coveralls-url]: https://coveralls.io/github/jkys/deprecated-api?branch=master
