@@ -11,3 +11,6 @@ cache:
 script:
   - npm run lint:travis
   - npm run test
+
+after_success:
+  - npm run coveralls

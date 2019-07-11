@@ -72,7 +72,7 @@ var option2 = {
 
 app.use(apiDeprecated(option1));
 
-app.use(apiDeprecated(options));
+app.use(apiDeprecated(option2));
 ```
 
 ```javascript
